@@ -1,4 +1,3 @@
-
 from pathlib import Path
 
 import pandas as pd
@@ -15,7 +14,7 @@ def load_dataset():
     df = pd.read_csv(DATA_PATH)
 
     X = df.drop(columns=["Id", "Species"])
-    y = df["Species"]
+    y = df["Id"]
 
     return X, y
 
