@@ -14,7 +14,7 @@ def load_dataset():
     df = pd.read_csv(DATA_PATH)
 
     X = df.drop(columns=["Id", "Species"])
-    y = df["Id"]
+    y = df["Species"]
 
     return X, y
 
